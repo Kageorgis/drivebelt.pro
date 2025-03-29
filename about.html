@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drivebelt</title>
+    <link rel="shortcut icon" type="image/png" href="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <!-- BODY -->
+  <body>
+    <div class="content-wrap title">
+      <h1>{{TITLE}}</h1>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="topnav hamburger">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <a href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <a href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <a href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav id="header">
+        <a class="text-pop-up-top" href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <a class="text-pop-up-top" href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <a class="text-pop-up-top" href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <a class="text-pop-up-top" href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+    </nav>
+
+    <div class="content-wrap content">
+      <div class="center">
+        <h2>Welcome to Drivebelt</h2>
+        <p>Providing professional consulting solutions tailored to your needs.</p>
+      </div>
+    </div>
+  </body>
+  <!-- BODY END -->
+  <footer class="content-wrap">
+    <div>
+        <i class="fa fa-home"></i>
+        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <i class="fa fa-info-circle"></i>
+        <a href="index.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <i class="fa fa-cogs"></i>
+        <a href="index.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <i class="fa fa-envelope-open-text"></i>
+        <a href="index.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+    </div>
+    <br>
+    <h5 data-nav="FOOTER">{{FOOTER}}</h5>
+    <br>
+    <p>{{COPYRIGHT}}</p> 
+  </footer>
+</html>

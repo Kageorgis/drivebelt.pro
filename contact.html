@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drivebelt</title>
+    <link rel="shortcut icon" type="image/png" href="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <!-- BODY -->
+  <body>
+    <div class="content-wrap title">
+      <h1>{{TITLE}}</h1>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="topnav hamburger">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <a href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <a href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <a href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav id="header">
+        <a class="text-pop-up-top" href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <a class="text-pop-up-top" href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <a class="text-pop-up-top" href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <a class="text-pop-up-top" href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+    </nav>
+
+    <div class="content-wrap content">
+      <div class="center">
+        <section class="contact-form">
+            <h2>Let's Talk About Your Project</h2>
+            <form id="contact-form" method="post">
+                
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+    
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+    
+                <label for="email">Work Email*</label>
+                <input type="email" id="email" name="email" placeholder="name@company.com" required>
+    
+                <label for="phone">Work Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your work phone">
+    
+                <label for="company">Company*</label>
+                <input type="text" id="company" name="company" placeholder="Company Name" required>
+    
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" placeholder="Add details about your request..." required></textarea>
+    
+                <input type="submit" value="Submit">
+                
+                <p class="privacy-policy">
+                    By submitting, you consent to Drivebelt processing your information in accordance with our 
+                    <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
+                </p>
+            </form>
+    
+            <div id="success-message" style="display: none;">Thank you! Your submission has been received! 🤘</div>
+            <div id="error-message" style="display: none;">Oops! Something went wrong while submitting the form.</div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <!-- BODY END -->
+  <footer class="content-wrap">
+    <div>
+        <i class="fa fa-home"></i>
+        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <i class="fa fa-info-circle"></i>
+        <a href="index.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <i class="fa fa-cogs"></i>
+        <a href="index.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <i class="fa fa-envelope-open-text"></i>
+        <a href="index.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+    </div>
+    <br>
+    <h5 data-nav="FOOTER">{{FOOTER}}</h5>
+    <br>
+    <p>{{COPYRIGHT}}</p> 
+  </footer>
+</html>

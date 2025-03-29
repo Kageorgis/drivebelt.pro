@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drivebelt</title>
+    <link rel="shortcut icon" type="image/png" href="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+  <!-- BODY -->
+  <body>
+    <div class="content-wrap title">
+      <h1>{{TITLE}}</h1>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="topnav hamburger">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <a href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <a href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <a href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav id="header">
+        <a class="text-pop-up-top" href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <a class="text-pop-up-top" href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <a class="text-pop-up-top" href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <a class="text-pop-up-top" href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+    </nav>
+
+    <div class="content-wrap content">
+      <div class="center">
+        
+        <section class="services-section">
+            <div class="section-header">
+                <h2>See how we can help you reach your goals</h2>
+            </div>
+        
+            <div class="services-grid stacked">
+                <div class="service-item">
+                    <div class="default-content">
+                        <img src="icons/finops.png" alt="FinOps Consulting" class="service-icon">
+                        <h3>FinOps Consulting</h3>
+                        <p>Take Control of Your Salesforce Costs & Maximize Value</p>
+                    </div>
+                    <div class="hover-content">
+                        <p>🔹 Track resource usage & costs with precision</p>
+                        <p>🔹 Quantify business value to drive smarter decisions</p>
+                        <p>🔹 Optimize usage & reduce unnecessary spend</p>
+                    </div>
+                </div>
+        
+                <div class="service-item">
+                    <div class="default-content">
+                        <img src="icons/devops.png" alt="DevOps Architecture" class="service-icon">
+                        <h3>DevOps Architecture</h3>
+                        <p>Streamline, Automate & Accelerate Your Delivery Pipeline</p>
+                    </div>
+                    <div class="hover-content">
+                        <p>🔹 Reduce deployment risks & speed up release cycles</p>
+                        <p>🔹 Build a rock-solid DevOps foundation for scale</p>
+                        <p>🔹 Implement GitHub, GitHub Actions, Docker, AWS, & CI/CD</p>
+                    </div>
+                </div>
+        
+                <div class="service-item">
+                    <div class="default-content">
+                        <img src="icons/solution-design.png" alt="Solution Design & Implementation" class="service-icon">
+                        <h3>Solution Design & Implementation</h3>
+                        <p>Seamless Salesforce Integration for Peak Performance</p>
+                    </div>
+                    <div class="hover-content">
+                        <p>🔹 Custom middleware designed for speed & scalability</p>
+                        <p>🔹 Handle massive data volumes effortlessly</p>
+                        <p>🔹 Future-proof your tech stack with tailored solutions</p>
+                    </div>
+                </div>
+        
+                <div class="service-item">
+                    <div class="default-content">
+                        <img src="icons/integration.png" alt="Integration Architecture" class="service-icon">
+                        <h3>Integration Architecture</h3>
+                        <p>Salesforce, Connected Like Never Before</p>
+                    </div>
+                    <div class="hover-content">
+                        <p>🔹 Build high-performance integrations across your ecosystem</p>
+                        <p>🔹 Ensure seamless data flow with robust middleware</p>
+                        <p>🔹 Scale with confidence—no bottlenecks, no limits</p>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+             
+        
+        
+        
+      </div>
+    </div>
+  </body>
+  <!-- BODY END -->
+  <footer class="content-wrap">
+    <div>
+        <i class="fa fa-home"></i>
+        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
+        <i class="fa fa-info-circle"></i>
+        <a href="index.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <i class="fa fa-cogs"></i>
+        <a href="index.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <i class="fa fa-envelope-open-text"></i>
+        <a href="index.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+    </div>
+    <br>
+    <h5 data-nav="FOOTER">{{FOOTER}}</h5>
+    <br>
+    <p>{{COPYRIGHT}}</p> 
+  </footer>
+</html>
