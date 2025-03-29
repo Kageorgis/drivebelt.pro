@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         NAV_ITEM_4: "Contact Us",
         FOOTER: "akageorgis@gmail.com",
         COPYRIGHT: "© 2025 Drivebelt LLC. All rights reserved.",
-        TITLE: "Drivebelt Services"
+        TITLE: "Drivebelt"
     };
 
     // Replace placeholders

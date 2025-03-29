@@ -17,8 +17,9 @@
   </head>
   <!-- BODY -->
   <body>
+    <!-- Title -->
     <div class="content-wrap title">
-      <h1>{{TITLE}}</h1>
+      <h1><img src="content/drivebeltTitleName.jpg" alt="Drivebelt Title"></h1>
     </div>
 
     <!-- Sidebar -->
@@ -46,8 +47,77 @@
 
     <div class="content-wrap content">
       <div class="center">
-        <h2>Welcome to Drivebelt</h2>
-        <p>Providing professional consulting solutions tailored to your needs.</p>
+            <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Streamline Your Salesforce Operations</h1>
+            <p>Optimize costs, accelerate delivery, and integrate seamlessly with Drivebelt’s expert consulting services.</p>
+            <a href="#contact" class="cta-button">Get a Free Consultation</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2>Our Expertise</h2>
+        <div class="services-grid">
+                <div class="service-item">
+                    <div class="default-content">
+                        <img src="content/finopsIcon.png" alt="FinOps Consulting" class="service-icon">
+                        <h3>FinOps Consulting</h3>
+                        <p>Take Control of Your Salesforce Costs & Maximize Value</p>
+                    </div>
+                </div>
+        
+                <div class="service-item">
+                    <div class="default-content">
+                        <img src="content/devopsIcon.png" alt="DevOps Architecture" class="service-icon">
+                        <h3>DevOps Architecture</h3>
+                        <p>Streamline, Automate & Accelerate Your Delivery Pipeline</p>
+                    </div>
+                </div>
+        
+                <div class="service-item">
+                    <div class="default-content">
+                        <img src="content/solutionDesignIcon.png" alt="Solution Design & Implementation" class="service-icon">
+                        <h3>Solution Design & Implementation</h3>
+                        <p>Seamless Salesforce Integration for Peak Performance</p>
+                    </div>
+                </div>
+        
+                <div class="service-item">
+                    <div class="default-content">
+                        <img src="content/integrationIcon.png" alt="Integration Architecture" class="service-icon">
+                        <h3>Integration Architecture</h3>
+                        <p>Salesforce, Connected Like Never Before</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"Drivebelt transformed our Salesforce integrations—seamless, efficient, and cost-effective!"</p>
+            <strong>- Alex M., CTO</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Their DevOps expertise reduced our deployment time by 50%. Highly recommend!"</p>
+            <strong>- Lisa R., Product Manager</strong>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Let’s Get Started</h2>
+        <p>Tell us about your project, and we’ll get back to you within 24 hours.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </section>
       </div>
     </div>
   </body>
@@ -57,11 +127,11 @@
         <i class="fa fa-home"></i>
         <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
         <i class="fa fa-info-circle"></i>
-        <a href="index.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
+        <a href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
         <i class="fa fa-cogs"></i>
-        <a href="index.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
+        <a href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
         <i class="fa fa-envelope-open-text"></i>
-        <a href="index.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+        <a href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
     </div>
     <br>
     <h5 data-nav="FOOTER">{{FOOTER}}</h5>
