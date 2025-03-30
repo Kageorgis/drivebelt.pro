@@ -19,7 +19,7 @@
   <body>
     <!-- Title -->
     <div class="content-wrap title">
-      <h1><img src="content/drivebeltTitleName.jpg" alt="Drivebelt Title"></h1>
+      <h1><img src="content/drivebeltTitleName.jpg" alt="Drivebelt Title" class="responsive-title"></h1>
     </div>
 
     <!-- Sidebar -->
@@ -38,7 +38,7 @@
     </div>
 
     <!-- Nav Bar -->
-    <nav id="header">
+    <nav id="nav">
         <a class="text-pop-up-top" href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
         <a class="text-pop-up-top" href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
         <a class="text-pop-up-top" href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
@@ -52,46 +52,67 @@
         <div class="hero-content">
             <h1>Streamline Your Salesforce Operations</h1>
             <p>Optimize costs, accelerate delivery, and integrate seamlessly with Drivebelt’s expert consulting services.</p>
-            <a href="#contact" class="cta-button">Get a Free Consultation</a>
+            <!-- <a href="#contact" class="cta-button">Get a Free Consultation</a> -->
         </div>
     </header>
 
     <!-- Services Section -->
     <section class="services-section">
         <h2>Our Expertise</h2>
-        <div class="services-grid">
-                <div class="service-item">
-                    <div class="default-content">
-                        <img src="content/finopsIcon.png" alt="FinOps Consulting" class="service-icon">
-                        <h3>FinOps Consulting</h3>
-                        <p>Take Control of Your Salesforce Costs & Maximize Value</p>
-                    </div>
-                </div>
-        
-                <div class="service-item">
-                    <div class="default-content">
-                        <img src="content/devopsIcon.png" alt="DevOps Architecture" class="service-icon">
-                        <h3>DevOps Architecture</h3>
-                        <p>Streamline, Automate & Accelerate Your Delivery Pipeline</p>
-                    </div>
-                </div>
-        
-                <div class="service-item">
-                    <div class="default-content">
-                        <img src="content/solutionDesignIcon.png" alt="Solution Design & Implementation" class="service-icon">
-                        <h3>Solution Design & Implementation</h3>
-                        <p>Seamless Salesforce Integration for Peak Performance</p>
-                    </div>
-                </div>
-        
-                <div class="service-item">
-                    <div class="default-content">
-                        <img src="content/integrationIcon.png" alt="Integration Architecture" class="service-icon">
-                        <h3>Integration Architecture</h3>
-                        <p>Salesforce, Connected Like Never Before</p>
-                    </div>
-                </div>
-        </div>
+        <div class="services-grid stacked">
+          <div class="service-item">
+              <div class="default-content">
+                  <img src="content/finopsIcon.png" alt="FinOps Consulting" class="service-icon">
+                  <h3>FinOps Consulting</h3>
+                  <p>Take Control of Your Salesforce Costs & Maximize Value</p>
+              </div>
+              <div class="hover-content">
+                  <p>⚙️ Track resource usage & costs with precision</p>
+                  <p>⚙️ Quantify business value to drive smarter decisions</p>
+                  <p>⚙️ Optimize usage & reduce unnecessary spend</p>
+              </div>
+          </div>
+  
+          <div class="service-item">
+              <div class="default-content">
+                  <img src="content/devopsIcon.png" alt="DevOps Architecture" class="service-icon">
+                  <h3>DevOps Architecture</h3>
+                  <p>Streamline, Automate & Accelerate Your Delivery Pipeline</p>
+              </div>
+              <div class="hover-content">
+                  <p>⚙️ Reduce deployment risks & speed up release cycles</p>
+                  <p>⚙️ Build a rock-solid DevOps foundation for scale</p>
+                  <p>⚙️ Implement GitHub, GitHub Actions, Docker, AWS, & CI/CD</p>
+              </div>
+          </div>
+  
+          <div class="service-item">
+              <div class="default-content">
+                  <img src="content/solutionDesignIcon.png" alt="Solution Design & Implementation" class="service-icon">
+                  <h3>Solution Design & Implementation</h3>
+                  <p>Seamless Salesforce Integration for Peak Performance</p>
+              </div>
+              <div class="hover-content">
+                  <p>⚙️ Custom middleware designed for speed & scalability</p>
+                  <p>⚙️ Handle massive data volumes effortlessly</p>
+                  <p>⚙️ Future-proof your tech stack with tailored solutions</p>
+              </div>
+          </div>
+  
+          <div class="service-item">
+              <div class="default-content">
+                  <img src="content/integrationIcon.png" alt="Integration Architecture" class="service-icon">
+                  <h3>Integration Architecture</h3>
+                  <p>Salesforce, Connected Like Never Before</p>
+              </div>
+              <div class="hover-content">
+                  <p>⚙️ Build high-performance integrations across your ecosystem</p>
+                  <p>⚙️ Ensure seamless data flow with robust middleware</p>
+                  <p>⚙️ Scale with confidence—no bottlenecks, no limits</p>
+              </div>
+          </div>
+  
+      </div>
     </section>
 
     <!-- Testimonials Section -->
@@ -108,7 +129,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
         <h2>Let’s Get Started</h2>
         <p>Tell us about your project, and we’ll get back to you within 24 hours.</p>
         <form>
@@ -117,7 +138,7 @@
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit" class="cta-button">Send Message</button>
         </form>
-    </section>
+    </section> -->
       </div>
     </div>
   </body>
