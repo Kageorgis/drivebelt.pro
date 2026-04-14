@@ -1,109 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Drivebelt</title>
+    <title>Contact Drivebelt</title>
     <link rel="icon" href="content/DrivebeltLogo.svg" sizes="any" type="image/svg+xml">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact Drivebelt to book a TurnVest demo or discuss Salesforce cost visibility and consulting support."
+    />
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Javascript file -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
-  <!-- BODY -->
-  <body>
-    <!-- Title -->
-    <div class="content-wrap title">
-      <h1><img src="content/drivebeltTitleName.svg" alt="Drivebelt Title" class="responsive-title"></h1>
-    </div>
+  <body class="turnvest-page secondary-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Drivebelt home">
+        <img src="content/drivebeltTitleName.svg" alt="Drivebelt" class="brand-logo">
+      </a>
 
-    <!-- Sidebar -->
-    <div class="topnav hamburger">
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
-        <a href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
-        <a href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
-        <a href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+      <div class="topnav hamburger">
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html#product" onclick="closeNav()">Product</a>
+          <a href="index.html#screenshots" onclick="closeNav()">Screenshots</a>
+          <a href="index.html#how-it-works" onclick="closeNav()">How It Works</a>
+          <a href="index.html#consulting" onclick="closeNav()">Consulting</a>
+          <a href="contact.html" onclick="closeNav()">Contact</a>
+        </div>
+        <div id="main">
+          <button class="openbtn" onclick="openNav()" aria-label="Open navigation">&#9776;</button>
+        </div>
       </div>
-      
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+      <nav id="nav" class="product-nav" aria-label="Main navigation">
+        <a href="index.html#product">Product</a>
+        <a href="index.html#screenshots">Screenshots</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#consulting">Consulting</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero section-band">
+        <div class="section-inner page-hero-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h1>Book a TurnVest demo or talk through Salesforce cost visibility.</h1>
+            <p>
+              Send a note with the Salesforce orgs, renewal timeline, or cost visibility problem you want to solve.
+            </p>
+            <div class="cta-row">
+              <a class="cta-button primary" href="mailto:support@drivebelt.pro?subject=TurnVest%20Demo%20Request">Email Drivebelt</a>
+              <a
+                class="cta-button secondary"
+                href="https://appexchange.salesforce.com/appxListingDetail?listingId=67fda616-7603-4aea-a06e-56bc9bd65c9f"
+                target="_blank"
+                rel="noopener"
+              >
+                View on AppExchange
+              </a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span>Email</span>
+            <a href="mailto:support@drivebelt.pro?subject=TurnVest%20Demo%20Request">support@drivebelt.pro</a>
+            <p>Use this for demos, AppExchange questions, rollout planning, and Salesforce consulting requests.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-inner contact-grid">
+          <article class="contact-step">
+            <span>1</span>
+            <h3>Share the renewal context</h3>
+            <p>Include your renewal date, number of orgs, and the spend or license questions you need answered.</p>
+          </article>
+          <article class="contact-step">
+            <span>2</span>
+            <h3>Review TurnVest fit</h3>
+            <p>Walk through how TurnVest can surface spend, unused cost, and cost per user across your orgs.</p>
+          </article>
+          <article class="contact-step">
+            <span>3</span>
+            <h3>Plan rollout support</h3>
+            <p>Decide whether Drivebelt consulting should help with onboarding, data mapping, or broader Salesforce operations.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="content-wrap site-footer">
+      <div class="footer-links">
+        <a href="index.html#product">Product</a>
+        <a href="index.html#screenshots">Screenshots</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#consulting">Consulting</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </div>
-
-    <!-- Nav Bar -->
-    <nav id="header">
-        <a class="text-pop-up-top" href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
-        <a class="text-pop-up-top" href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
-        <a class="text-pop-up-top" href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
-        <a class="text-pop-up-top" href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
-    </nav>
-
-    <div class="content-wrap content">
-      <div class="center">
-
-        <h1>Contact</h1>
-
-        <br>
-    
-          <h3>
-            Send an email to:
-          </h3>
-    
-          <h4
-            >support@drivebelt.pro</h4
-          ><br>
-
-        <!-- CONTACT FORM -->
-        <!-- <section class="contact-form">
-            <h2>Let's Talk About Your Project</h2>
-            <form id="contact-form" method="post">
-                
-              <label for="name">Name*</label>
-              <input type="text" id="name" name="name" required>
-          
-              <label for="email">Email*</label>
-              <input type="email" id="email" name="email" required>
-          
-              <label for="message">Message*</label>
-              <textarea id="message" name="message" required></textarea>
-
-              <button type="submit">Send Message</button>
-    
-              <div id="success-message" style="display: none;">Thank you! Your submission has been received! 🤘</div>
-              <div id="error-message" style="display: none;">Oops! Something went wrong while submitting the form.</div>
-                
-                <p class="privacy-policy">
-                    By submitting, you consent to Drivebelt processing your information in accordance with our 
-                    <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.
-                </p>
-            </form>
-  
-        </section> -->
-      </div>
-    </div>
+      <h5>support@drivebelt.pro</h5>
+      <p>&copy; 2026 Drivebelt LLC. All rights reserved.</p>
+    </footer>
   </body>
-  <!-- BODY END -->
-  <footer class="content-wrap">
-    <div>
-        <i class="fa fa-home"></i>
-        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
-        <i class="fa fa-info-circle"></i>
-        <a href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
-        <i class="fa fa-cogs"></i>
-        <a href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
-        <i class="fa fa-envelope-open-text"></i>
-        <a href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
-    </div>
-    <br>
-    <h5 data-nav="FOOTER">{{FOOTER}}</h5>
-    <br>
-    <p>{{COPYRIGHT}}</p> 
-  </footer>
 </html>

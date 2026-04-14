@@ -1,136 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Drivebelt</title>
+    <title>Drivebelt Consulting Services</title>
     <link rel="icon" href="content/DrivebeltLogo.svg" sizes="any" type="image/svg+xml">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Drivebelt consulting supports TurnVest rollouts and broader Salesforce FinOps, DevOps, implementation, and integration architecture work."
+    />
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Javascript file -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
-  <!-- BODY -->
-  <body>
-    <!-- Title -->
-    <div class="content-wrap title">
-      <h1><img src="content/drivebeltTitleName.svg" alt="Drivebelt Title" class="responsive-title"></h1>
-    </div>
+  <body class="turnvest-page secondary-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Drivebelt home">
+        <img src="content/drivebeltTitleName.svg" alt="Drivebelt" class="brand-logo">
+      </a>
 
-    <!-- Sidebar -->
-    <div class="topnav hamburger">
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
-        <a href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
-        <a href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
-        <a href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
+      <div class="topnav hamburger">
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html#product" onclick="closeNav()">Product</a>
+          <a href="index.html#screenshots" onclick="closeNav()">Screenshots</a>
+          <a href="index.html#how-it-works" onclick="closeNav()">How It Works</a>
+          <a href="index.html#consulting" onclick="closeNav()">Consulting</a>
+          <a href="contact.html" onclick="closeNav()">Contact</a>
+        </div>
+        <div id="main">
+          <button class="openbtn" onclick="openNav()" aria-label="Open navigation">&#9776;</button>
+        </div>
       </div>
-      
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-      </div>
-    </div>
 
-    <!-- Nav Bar -->
-    <nav id="header">
-        <a class="text-pop-up-top" href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
-        <a class="text-pop-up-top" href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
-        <a class="text-pop-up-top" href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
-        <a class="text-pop-up-top" href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
-    </nav>
+      <nav id="nav" class="product-nav" aria-label="Main navigation">
+        <a href="index.html#product">Product</a>
+        <a href="index.html#screenshots">Screenshots</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#consulting">Consulting</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-    <div class="content-wrap content">
-      <div class="center">
-        
-        <section class="services-section">
-            <div class="section-header">
-                <h2>See how we can help you reach your goals</h2>
+    <main>
+      <section class="page-hero section-band">
+        <div class="section-inner page-hero-grid">
+          <div>
+            <p class="eyebrow">Consulting</p>
+            <h1>Salesforce support for teams moving from visibility to action.</h1>
+            <p>
+              Drivebelt consulting helps teams roll out TurnVest, improve Salesforce operations, and turn spend insight into execution.
+            </p>
+            <div class="cta-row">
+              <a class="cta-button primary" href="contact.html">Talk to Drivebelt</a>
+              <a
+                class="cta-button secondary"
+                href="https://appexchange.salesforce.com/appxListingDetail?listingId=67fda616-7603-4aea-a06e-56bc9bd65c9f"
+                target="_blank"
+                rel="noopener"
+              >
+                View TurnVest
+              </a>
             </div>
-        
-            <div class="services-grid stacked">
-              <div class="service-item">
-                  <div class="default-content">
-                      <img src="content/finopsIcon.png" alt="FinOps Consulting" class="service-icon">
-                      <h3>FinOps Consulting</h3>
-                      <p>Take Control of Your Salesforce Costs & Maximize Value</p>
-                  </div>
-                  <div class="hover-content">
-                      <p>⚙️ Track resource usage & costs with precision</p>
-                      <p>⚙️ Quantify business value to drive smarter decisions</p>
-                      <p>⚙️ Optimize usage & reduce unnecessary spend</p>
-                  </div>
-              </div>
-      
-              <div class="service-item">
-                  <div class="default-content">
-                      <img src="content/devopsIcon.png" alt="DevOps Architecture" class="service-icon">
-                      <h3>DevOps Architecture</h3>
-                      <p>Streamline, Automate & Accelerate Your Delivery Pipeline</p>
-                  </div>
-                  <div class="hover-content">
-                      <p>⚙️ Reduce deployment risks & speed up release cycles</p>
-                      <p>⚙️ Build a rock-solid DevOps foundation for scale</p>
-                      <p>⚙️ CI/CD, GitHub, GitHub Actions, Docker, & AWS</p>
-                  </div>
-              </div>
-      
-              <div class="service-item"> 
-                <div class="default-content">
-                    <img src="content/solutionDesignIcon.png" alt="Solution Design & Implementation" class="service-icon">
-                    <h3>Solution Design & Implementation</h3>
-                    <p>Robust, scalable architecture</p>
-                </div>
-                <div class="hover-content">
-                  <p>⚙️ Scalable, high-performance architecture</p>
-                  <p>⚙️ Secure, compliant, and future-proof solutions</p>
-                  <p>⚙️ Data-driven insights for smarter decision-making</p>
-                </div>
-            </div>
-      
-              <div class="service-item">
-                  <div class="default-content">
-                      <img src="content/integrationIcon.png" alt="Integration Architecture" class="service-icon">
-                      <h3>Integration Architecture</h3>
-                      <p>Salesforce, Connected Like Never Before</p>
-                  </div>
-                  <div class="hover-content">
-                      <p>⚙️ Build high-performance integrations across your ecosystem</p>
-                      <p>⚙️ Custom middleware designed for speed & scalability</p>
-                      <p>⚙️ Handle massive data volumes effortlessly</p>
-                  </div>
-              </div>
-        
-            </div>
-        </section>
-        
-             
-        
-        
-        
+          </div>
+          <div class="page-proof-card">
+            <span>Product-led services</span>
+            <p>
+              Implementation, optimization, data mapping, onboarding, and Salesforce architecture help around TurnVest and broader operations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-inner">
+          <div class="section-heading centered">
+            <p class="eyebrow">Where Drivebelt helps</p>
+            <h2>Consulting that supports cost visibility and operational maturity.</h2>
+          </div>
+          <div class="service-card-grid">
+            <article class="modern-service-card">
+              <img src="content/finopsIcon.png" alt="FinOps consulting icon">
+              <h3>Salesforce FinOps</h3>
+              <p>Build governance around spend, usage, license waste, cost per user, and renewal readiness.</p>
+            </article>
+            <article class="modern-service-card">
+              <img src="content/devopsIcon.png" alt="DevOps architecture icon">
+              <h3>DevOps Architecture</h3>
+              <p>Improve delivery pipelines, release control, automation, and Salesforce deployment confidence.</p>
+            </article>
+            <article class="modern-service-card">
+              <img src="content/solutionDesignIcon.png" alt="Solution design icon">
+              <h3>Solution Design and Implementation</h3>
+              <p>Design scalable Salesforce solutions that connect product insight to durable business process.</p>
+            </article>
+            <article class="modern-service-card">
+              <img src="content/integrationIcon.png" alt="Integration architecture icon">
+              <h3>Integration Architecture</h3>
+              <p>Connect Salesforce to the systems that explain usage, cost, identity, and operating context.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="consulting-section section-band">
+        <div class="section-inner consulting-panel">
+          <div>
+            <p class="eyebrow">TurnVest rollout</p>
+            <h2>Need help getting the cost model right?</h2>
+            <p>
+              Drivebelt can support org onboarding, data mapping, stakeholder reporting, optimization workflows, and the operating model that turns TurnVest findings into savings.
+            </p>
+          </div>
+          <a class="cta-button secondary" href="contact.html">Book a Demo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="content-wrap site-footer">
+      <div class="footer-links">
+        <a href="index.html#product">Product</a>
+        <a href="index.html#screenshots">Screenshots</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#consulting">Consulting</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </div>
+      <h5>support@drivebelt.pro</h5>
+      <p>&copy; 2026 Drivebelt LLC. All rights reserved.</p>
+    </footer>
   </body>
-  <!-- BODY END -->
-  <footer class="content-wrap">
-    <div>
-        <i class="fa fa-home"></i>
-        <a href="index.html" data-nav="NAV_ITEM_1">{{NAV_ITEM_1}}</a>
-        <i class="fa fa-info-circle"></i>
-        <a href="about.html" data-nav="NAV_ITEM_2">{{NAV_ITEM_2}}</a>
-        <i class="fa fa-cogs"></i>
-        <a href="services.html" data-nav="NAV_ITEM_3">{{NAV_ITEM_3}}</a>
-        <i class="fa fa-envelope-open-text"></i>
-        <a href="contact.html" data-nav="NAV_ITEM_4">{{NAV_ITEM_4}}</a>
-    </div>
-    <br>
-    <h5 data-nav="FOOTER">{{FOOTER}}</h5>
-    <br>
-    <p>{{COPYRIGHT}}</p> 
-  </footer>
 </html>
